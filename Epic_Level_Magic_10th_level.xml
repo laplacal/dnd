@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="10th level spells" type="Option" source="Netheril: Empire of Magic" id="ID_NETHERIL_10TH_LEVEL_MAGIC">
+		<description>
+			<p>This option allows players to select different 10th level spells to add to their masterful control of the arcane.</p>
+			<ul>
+				<li>You may select 3 10th level spells to have access to. You do not gain access to 10th level spell slots.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Gives access to 10th level spells</set>
+		</setters>
+		<rules>
+			<select type="Spell" name="10th level spell" supports="ID_LEFEBERS_WEAVE_MYTHAL|ID_PROCTIVS_MOVE_MOUNTAIN|ID_MAVINS_EARTHFAST|ID_MAVINS_CREATE_VOLCANO|ID_TOLODINES_KILLING_WIND|ID_VALADICKS_SPHERESAIL" />
+			<select type="Spell" name="10th level spell" supports="ID_LEFEBERS_WEAVE_MYTHAL|ID_PROCTIVS_MOVE_MOUNTAIN|ID_MAVINS_EARTHFAST|ID_MAVINS_CREATE_VOLCANO|ID_TOLODINES_KILLING_WIND|ID_VALADICKS_SPHERESAIL" />
+			<select type="Spell" name="10th level spell" supports="ID_LEFEBERS_WEAVE_MYTHAL|ID_PROCTIVS_MOVE_MOUNTAIN|ID_MAVINS_EARTHFAST|ID_MAVINS_CREATE_VOLCANO|ID_TOLODINES_KILLING_WIND|ID_VALADICKS_SPHERESAIL" />
+		</rules>
+	</element>
+	<!--9th level spells-->
+	<element name="Ioulam's Imbue Mythallar" type="Spell" source="Netheril: Empire of Magic" id="ID_IMBUE_MYTHALLAR">
+		<supports>Wizard, Sorcerer</supports>
+		<description>
+		<p>This spell creates a massive spheroid shaped magical device called a <b>Mythallar</b> that shapes the raw magic of the weave as the caster wills it.</p>
+		<p class="indent">This magical device can concentrate on spells and cast spells from itself. the amount of spells a Mythallar could concentrate one is equal to the casters level.</p>
+		<p class="indent">A Mythallar had a base diameter of 150ft</p>
+		<p class="indent">The range of a Mythallars affect increased by 250ft for every 4 levels of the caster.</p>
+		</description>
+		<setters>
+		<set name="keywords">Concentration, Creation, Core</set>
+		<set name="level">9</set>
+		<set name="school">Evocation</set>
+		<set name="time">10 hours, 20 minutes</set>
+		<set name="duration">Permanent</set>
+		<set name="range">Touch</set>
+		<set name="hasVerbalComponent">false</set>
+		<set name="hasSomaticComponent">false</set>
+		<set name="hasMaterialComponent">true</set>
+		<set name="materialComponent">6 diamonds worth 500pp each </set>
+		<set name="isConcentration">true</set>
+		<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<!-- 5 x 10th level spells-->
+	<element name="Lefeber's Weave Mythal (10th level)" type="Spell" source="Netheril: Empire of Magic" id="ID_LEFEBERS_WEAVE_MYTHAL">
+		<supports></supports>
+		<description>
+		<p>This spell created a spherical force of magic that required an activation of some sort to allow entry. All living creatures‚ undead creatures‚ animated objects‚ and the like unfamiliar with the activation key were unable to penetrate the perimeter of the spell. Lefeber included a number of activation formulae for his new Mythal‚ and the archwizards who adopted this protection used some of his ideas or created their own The method used to penetrate a mythal included: somatic movement‚ word‚ or phrase activator; proper alignment or motivation; riding a specific kind of mount; humming a few bars of a song; or an item with a magical imprint of some sort.</p>
+		<p class="indent">When creating a mythal, the size of the spherical protection was based on the level of the spellcaster—this was the maximum size of the sphere. The size, however, could be smaller if the  rcanist desired. Once cast, the arcanist lost one level of experience, but was able to attach one additional spell or effect for every five levels of the caster (rounded down) to the mythal sphere. For instance, a lightning bolt could be attached to the mythal to attack anyone who neglected to use the activation key to gain entry, and this lightning bolt would strike as many targets as the arcanist had levels when the mythal was created.</p>
+		</description>
+		<setters>
+		<set name="keywords">Evocation</set>
+		<set name="level">9</set>
+		<set name="school">Evocation (10th level)</set>
+		<set name="time">1 action</set>
+		<set name="duration">Permanent</set>
+		<set name="range">Touch</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">false</set>
+		<set name="hasMaterialComponent">true</set>
+		<set name="materialComponent">a part of the casters life force (1 level) </set>
+		<set name="isConcentration">true</set>
+		<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Proctiv's Move Mountain (10th level)" type="Spell" source="Netheril: Empire of Magic" id="ID_PROCTIVS_MOVE_MOUNTAIN">
+		<supports></supports>
+		<description>
+		<p>This spell was vital in the construction of enclaves. Without this spell, there was no simple way for severed mountains to be turned over and set afloat above the landscape.</p>
+		<p class="indent">When this spell was cast, the archwizard simply viewed the 
+		mountain he wanted to affect and the mountain was severed from 
+		the earth, leaving a flat mesa behind. The mountain was then 
+		turned over so the flat side was up, and the move mountain spell 
+		allowed this new structure to levitate. Once this was accomplished, 
+		the archwizard could begin constructing a city upon its 
+		smooth surface.</p>
+		<p class="indent1">A Mythallar which needs to be placed within 2 weeks, a magical device that allows flying or levitation, and a crystal ball.</p>
+		</description>
+		<setters>
+		<set name="keywords">AntiGravity, Floating, Terraform, Move, Mountain</set>
+		<set name="level">9</set>
+		<set name="school">Transmutation (10th level)</set>
+		<set name="time">2 hours</set>
+		<set name="duration">Permanent</set>
+		<set name="range">Sight</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">false</set>
+		<set name="hasMaterialComponent">true</set>
+		<set name="materialComponent">A Mythallar which needs to be placed within 2 weeks, a magical device that allows flying or levitation, and a crystal ball.</set>
+		<set name="isConcentration">true</set>
+		<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mavin's Earthfast (10th level)" type="Spell" source="Netheril: Empire of Magic" id="ID_MAVINS_EARTHFAST">
+		<supports></supports>
+		<description>
+		<p>This spell was initially created to allow further mining of areas that were too dangerous to work otherwise. By casting the earthfast spell, large areas of underground tunnels became impervious to cave-ins and other similar catastrophes, the magic supporting the ceiling so that additional mining could continue.</p>
+		<p class="indent">The spell was also used for other purposes, since it also drastically halted the weathering of city streets and buildings. Many cities sought out archwizards who would cast the earthfast spell to preserve important areas of their community.</p>
+		<p class="indent1">a stone of controlling earth elementals, six chardalyns each  imbued with <i>transmute mud to rock</i>, and an earth elemental. all being consumed by the spell. </p>
+		</description>
+		<setters>
+		<set name="keywords">Evocation</set>
+		<set name="level">9</set>
+		<set name="school">Transmutation (10th level)</set>
+		<set name="time">2 hours</set>
+		<set name="duration">1 year/level</set>
+		<set name="range">1 mile/level</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">false</set>
+		<set name="hasMaterialComponent">true</set>
+		<set name="materialComponent">a stone of controlling earth elementals, six chardalyns each  imbued with <i>transmute mud to rock</i>, and an earth elemental. all being consumed by the spell. </set>
+		<set name="isConcentration">true</set>
+		<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mavin's Create Volcano (10th level)" type="Spell" source="Netheril: Empire of Magic" id="ID_MAVINS_CREATE_VOLCANO">
+		<supports></supports>
+		<description>
+		<p>This spell was never cast in Netheril‚ but every arcanist that looked at its formula was convinced that it would do as promised: create a volcano. Numerous ideas were brought forward to rid Netheril of the threat of orcs, goblins, and other undesirable creatures, but the threat to other ground-dwelling creatures (including the dwarves, elves, and other groundling cities) was too great.</p>
+		<p class="indent">According to spell notes, the casting of the spell would produce a minor earthquake in the effect’s area. Within a week, ash and steam would be seen pouring through the earth. Within a month, a complete, erupting volcano would be present.</p>
+		<p class="indent1">The material components for this spell included a mantle of sewn diamonds that acted as double-strength ring of fire restitance, a helm of brilliance, and a mythallar, which was placed at the site of the volcano.</p>
+		</description>
+		<setters>
+		<set name="keywords">Conjuration, VOlcano, Fire, Eruption, burn</set>
+		<set name="level">9</set>
+		<set name="school">Conjuration (10th level)</set>
+		<set name="time">1 day</set>
+		<set name="duration">1 year</set>
+		<set name="range">1 mile/level</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">false</set>
+		<set name="hasMaterialComponent">true</set>
+		<set name="materialComponent">A mantle of sewn diamonds that acted as double-strength ring of fire restitance, a helm of brilliance, and a mythallar, which was placed at the site of the volcano. </set>
+		<set name="isConcentration">true</set>
+		<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Tolodine's Killing Wind (10th level)" type="Spell" source="Netheril: Empire of Magic" id="ID_TOLODINES_KILLING_WIND">
+		<supports></supports>
+		<description>
+		<p>Tolodine’s killing wind was designed to kill large numbers of creatures, and it worked well. When cast, billowing vapors moved away from the caster at an incredible rate of speed, overtaking anything within the area of effect unless magical means were used to escape.</p>
+		<p class="indent">Creatures caught within the cloud were entitled to a single saving throw versus the casters spell save DC to resist being killed by the spell. Creatures made a saving throw with a modifier based on the caster’s sacrifice.</p>
+		<p class="indent1">The casting of this spell automatically drained two levels from the caster (though for purposes of area of effect, range, and duration, the caster’s original level was used). In addition, the caster could opt to sacrifice more life energy, imposing a -1 required penalty to all saving throws for every level sacrificed (up to a maximum of -10). The one side effect to this, however, was that there was a 5% chance per level drained voluntarily that the caster’s essence would be pulled into the Negative Energy plane forever.</p>
+		<p class="indent2">If pulled into the Negative Material Plane, one of two things occurred. If the caster was alive, the essence was consumed and the caster killed. The spellcaster was lost forever and couldn’t be resurrected or brought back to life in any way. If the spellcaster was undead, the essence continued to exist but it was trapped in the Negative Material Plane.</p>
+		</description>
+		<setters>
+		<set name="keywords">Conjuration, Massacre, killing, wind</set>
+		<set name="level">9</set>
+		<set name="school">Conjuration (10th level)</set>
+		<set name="time">1 round</set>
+		<set name="duration">1 hour/level</set>
+		<set name="range">300 ft/level</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">false</set>
+		<set name="hasMaterialComponent">true</set>
+		<set name="materialComponent">2 of the players levels levels</set>
+		<set name="isConcentration">false</set>
+		<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Valdick's Spheresail (10th level)" type="Spell" source="Netheril: Empire of Magic" id="ID_VALADICKS_SPHERESAIL">
+		<supports></supports>
+		<description>
+		<p>The archwizard Valdick loved to travel—not through the planes, but through the Prime Material plane. Travel between crystal spheres was his favorite, but he didn’t like the amount of time required to traverse these long distances, therefore he created the spheresail spell.</p>
+		<p class="indent">Within a crystal sphere, the spell dipped directly into the magical forces of the goddess Mystryl and converted this raw power into motion‚ giving the spelljamming craft great spell (a maximum Movement Rate of 20 near planets or double-spelljamming speed in the intervening space between celestial bodies). This allowed the user to go from one planet to another quickly or from one city to another at lightning speed.</p>
+		<p class="indent1">Outside a crystal sphere, the spheresail spell focused on the gravitational energies of the destination sphere, pulling itself along these lines, gaining speed. By using this spell, a spelljamming vessel could traverse the distance in half the time ordinary spelljamming crafts were able to move.</p>
+		<p class="indent2">Cast upon a vessel designed specifically for spelljamming or on any watercraft, the spell was permanent until dispelled by an arcanist of equal or greater level. The effects of the spheresail could be turned off and activated at will as many times daily as needed.</p>
+		</description>
+		<setters>
+		<set name="keywords">Enchantment, Space, Travel, Movement, vehicle</set>
+		<set name="level">9</set>
+		<set name="school">Enchantment (10th level)</set>
+		<set name="time">9 hours</set>
+		<set name="duration">Permanent</set>
+		<set name="range">Touch (one watercraft)</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">false</set>
+		<set name="hasMaterialComponent">false</set>
+		<set name="materialComponent"> </set>
+		<set name="isConcentration">false</set>
+		<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+
+	<!--epic level spell slots-->
+    <element name="10th level spell slots" type="Magic Item" source="Xerandr's journal to the great unknown" id="ID_TENTH_LEVEL_SPELLS">
+		<description>
+			<p>Bypassing the rules of the gods and achieving the unthinkable. the casting of spells higher than 9th level.</p>
+			<p class="indent"><strong><em>Spell slots </em></strong> this item has 3 charges which can be used in place of 10th level spell slots.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell slot</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">???</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">hands</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Artifact</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="level" />
+			<stat name="hp" value="level" />
+		</rules>
+    </element>
+</elements>
